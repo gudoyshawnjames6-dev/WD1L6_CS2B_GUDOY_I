@@ -1,0 +1,369 @@
+
+index.html
+100%
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Character encoding and responsive viewport settings -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shawn James Gudoy | Web Developer Portfolio</title>
+
+  <!-- Bootstrap 5 CSS via jsDelivr CDN (Required: Bootstrap CSS Framework Only) -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous"
+    >
+</head>
+<!-- External Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+
+<body data-bs-spy="scroll" data-bs-target="#mainNavbar" data-bs-offset="80" tabindex="0">
+
+  <!-- Top Navigation Bar -->
+  <nav id="mainNavbar" class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#hero">Shawn's Web Dev Profile</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about-motto">Developer &amp; Motto</a></li>
+          <li class="nav-item"><a class="nav-link" href="#philosophy">Design Philosophy</a></li>
+          <li class="nav-item"><a class="nav-link" href="#portfolio">Projects Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 1. Hero Page Section -->
+  <header id="hero" class="hero-section py-5 text-white d-flex align-items-center">
+    <div class="container py-4">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-8">
+          <span class="badge rounded-pill text-bg-light text-primary mb-3 px-3 py-2 fw-semibold">
+            BS Computer Science &bull; web Development 1
+          </span>
+          <h1 class="display-4 fw-bold mb-3">Crafting Clean, Functional Web Experiences.</h1>
+          <p class="lead mb-4">
+            Hello! I&rsquo;m <strong>Shawn James Gudoy</strong>, a Computer Science student who enjoys designing and building clean, responsive websites.
+          </p>
+          
+          <div class="d-flex flex-wrap gap-3">
+            <a href="#portfolio" class="btn btn-light btn-lg text-primary fw-semibold px-4">
+              Explore My Work
+            </a>
+            <a href="#contact" class="btn btn-outline-light btn-lg px-4">
+              Get in Touch
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-4 text-center">
+          <div class="p-4 bg-white bg-opacity-10 rounded-4 border border-white border-opacity-25">
+            <p class="small text-uppercase mb-1 opacity-75">Core Stack</p>
+            <p class="h5 fw-bold mb-2">HTML &bull; CSS &bull; JavaScript &bull; Bootstrap</p>
+            <p class="mb-0 small opacity-90">
+              Focused on clean file organization, responsive grids, and intuitive user interaction.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- 2. Developer's Photo / Motto-Saying Section -->
+    <section id="about-motto" class="py-5 bg-white">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <div class="col-md-4 text-center">
+            <!-- Place your profile photo inside images/developer-photo.jpg -->
+            <img
+              src="e7c57854-2005-4b5b-b295-f8da5ed10172.jpg"
+              alt="Shawn James Portfolio"
+              class="img-fluid rounded-4 shadow-sm dev-photo"
+            >
+          </div>
+          <div class="col-md-8">
+            <h2 class="h2 fw-bold text-primary mb-2">About the Developer</h2>
+            <p class="text-muted mb-3">
+              Passionate about web development, UI layout, and building projects that balance visual appeal
+              with clean, maintainable code.
+            </p>
+            <!-- Initial Motto (Cycles through all 4 mottos via js/script.js) -->
+            <blockquote class="blockquote bg-light border-start border-4 border-primary p-4 rounded-end mb-3">
+              <p class="mb-2 fst-italic fw-medium">
+                &ldquo;Code with clarity. Design with intent.&rdquo;
+              </p>
+              <footer class="blockquote-footer mb-0 mt-1">Shawn</footer>
+            </blockquote>
+            <button id="shuffleMottoBtn" type="button" class="btn btn-outline-primary btn-sm">
+            <button id="bwToggle">Next Motto Saying
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Design Philosophy Discussion Section -->
+    <section id="philosophy" class="py-5 bg-light">
+      <div class="container">
+        <div class="row justify-content-center mb-4">
+          <div class="col-lg-9 text-center">
+            <h2 class="h2 fw-bold text-primary mb-3">Design Philosophy</h2>
+            <p class="lead text-secondary">
+              My design identity blends <strong>black aesthetics, purposeful whitespace, and intuitive flow</strong> ensuring
+              every page feels organized, welcoming, and effortless to navigate.
+            </p>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-body p-4">
+                <h3 class="h5 fw-bold text-primary">Intentional Simplicity</h3>
+                <p class="card-text text-secondary mb-0">
+                  I avoid unnecessary visual clutter so users immediately recognize where to look, what to read,
+                  and how to interact with each component.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-body p-4">
+                <h3 class="h5 fw-bold text-primary">;Consistent Hierarchy</h3>
+                <p class="card-text text-secondary mb-0">
+                  I use clear typography, spacing, and contrast to guide attention naturally from primary actions to supporting details.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-body p-4">
+                <h3 class="h5 fw-bold text-primary">Accessible Responsiveness</h3>
+                <p class="card-text text-secondary mb-0">
+                  I design layouts that adapt smoothly across screen sizes while remaining intuitive for keyboard and screen-reader users.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 4. Projects Portfolio Section (Midterms to Finals) -->
+    <section id="portfolio" class="py-5 bg-white">
+      <div class="container">
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center mb-4 gap-3">
+          <div>
+            <h2 class="h2 fw-bold text-primary mb-1">Projects Portfolio</h2>
+            <p class="text-muted mb-0">Coursework milestones from Midterms to Finals. Click any activity to preview its screenshot and details.</p>
+          </div>
+
+          <!-- Term Filter Buttons controlled by external JS -->
+          <div class="btn-group" role="group" aria-label="Filter projects by term">
+            <button type="button" class="btn btn-primary active filter-btn" data-filter="all">All Projects</button>
+            <button type="button" class="btn btn-outline-primary filter-btn" data-filter="midterm">Midterms</button>
+            <button type="button" class="btn btn-outline-primary filter-btn" data-filter="finals">Finals</button>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <!-- Combined Midterm Projects Card (1 Main Cover Image + Individual Activity Previews & GitHub Links) -->
+          <div class="col-md-6 project-item" data-category="midterm">
+            <div class="card h-100 shadow-sm border-0">
+              <img
+                src="imgrr.jpg"
+                class="card-img-top project-img"
+                alt="Midterm Activity Compilation"
+              >
+              <div class="card-body d-flex flex-column p-4">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <span class="badge text-bg-primary">Midterm Compilation</span>
+                  <small class="text-muted">HTML &amp; CSS</small>
+                </div>
+                <h3 class="h5 fw-bold">Midterm Web Development Activities</h3>
+                <p class="card-text text-secondary small mb-3">
+                  Click <strong>Preview</strong> on any activity below to view its screenshot and notes:
+                </p>
+
+                <!-- Individual Midterm Activities with Preview (Screenshot + Notes) and GitHub Links -->
+                <ul class="list-group list-group-flush mb-3 flex-grow-1 small">
+                  <li class="list-group-item px-0 d-flex justify-content-between align-items-center gap-2">
+                    <span><strong>index_p1:</strong> My First Webpage</span>
+                    <div class="btn-group btn-group-sm">
+                      <button
+                        type="button"
+                        class="btn btn-outline-secondary view-details-btn"
+                        data-title="Activity"
+                        data-details="Focused on semantic HTML tags, headings, paragraphs, and text formatting elements."
+                        data-img="media/Screenshot (317).png"
+                      >
+                        Preview
+                      </button>
+                      <a href=https://github.com/gudoyshawnjames6-dev/WDL5_CS2B_GUDOY_I target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary">GitHub</a>
+                    </div>
+                </li>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Finals Project Card -->
+          <div class="col-md-6 project-item" data-category="finals">
+            <div class="card h-100 shadow-sm border-0">
+              <img
+                src="BLEBLE.jpg"
+                class="card-img-top project-img"
+                alt="Finals Project"
+              >
+              <div class="card-body d-flex flex-column p-4">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <span class="badge text-bg-info text-dark">Finals Output</span>
+                  <small class="text-muted">Bootstrap &amp; JavaScript</small>
+                </div>
+                <h3 class="h5 fw-bold">Movie Promotion Website</h3>
+                <p class="card-text text-secondary flex-grow-1">
+                 Created a themed promotional page for a featured movie by organizing visual sections, release highlights, and responsive layouts to capture viewer attention and drive interest.
+                </p>
+                <div class="d-flex gap-2 mt-3">
+                  </a>
+                  <button
+                    type="button"
+                    class="btn btn-outline-secondary btn-sm view-details-btn"
+                    data-title="Movie Promotion Website"
+                    data-details="Designed and built a promotional showcase highlighting a featured film using structured layouts, eye-catching visuals, and clear call-to-action sections to build audience hype and engagement."
+                    data-img="media/Screenshot 2026-11-22 195715.png"
+                  >
+                    Preview 
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dynamic Project Preview & Details Box (Shows Screenshot + Notes when any Preview button is clicked) -->
+        <div id="projectDetailsBox" class="card border-primary shadow-sm mt-4 d-none">
+          <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
+            <h4 id="detailTitle" class="h6 fw-bold mb-0">Project Preview</h4>
+            <button id="closeDetailsBtn" type="button" class="btn-close btn-close-white" aria-label="Close"></button>
+          </div>
+          <div class="card-body p-4">
+            <div class="row align-items-center g-4">
+              <div class="col-md-5 text-center">
+                <img
+                  id="detailImage"
+                  src=""
+                  alt="Selected Activity Screenshot"
+                  class="img-fluid rounded border shadow-sm preview-screenshot"
+                >
+              </div>
+              <div class="col-md-7">
+                <h5 class="fw-bold text-primary mb-2">Activity Overview</h5>
+                <p id="detailDescription" class="text-secondary mb-0"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+             
+
+    <!-- 5. Contact Us Section -->
+    <section id="contact" class="py-5 bg-light">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="card border-0 shadow-sm">
+              <div class="card-body p-4 p-md-5">
+                <h2 class="h2 fw-bold text-primary mb-2 text-center">Contact Us</h2>
+                <p class="text-muted text-center mb-4">
+                  Want to collaborate on a project or share feedback? Feel free to leave a message below.
+                </p>
+
+                <!-- Feedback alert handled by external JS -->
+                <div id="contactFeedback" class="alert d-none" role="alert"></div>
+
+                <form id="contactForm" novalidate>
+                  <div class="row g-3">
+                    <div class="col-md-6">
+                      <label for="senderName" class="form-label fw-semibold">Full Name</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="senderName"
+                        placeholder="e.g., Mayyang123"
+                        required
+                      >
+                    </div>
+                    <div class="col-md-6">
+                      <label for="senderEmail" class="form-label fw-semibold">Email Address</label>
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="senderEmail"
+                        placeholder="e.g., Mayyang@gmail.com"
+                        required
+                      >
+                    </div>
+                    <div class="col-12">
+                      <label for="senderMessage" class="form-label fw-semibold">Your Message</label>
+                      <textarea
+                        class="form-control"
+                        id="senderMessage"
+                        rows="4"
+                        placeholder="Tell me about your message or inquiry..."
+                        required
+                      ></textarea>
+                    </div>
+                    <div class="col-12 text-end">
+                      <button type="submit" class="btn btn-primary px-4">Send Message</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="py-4 bg-dark text-white text-center">
+    <div class="container">
+      <p class="mb-0 small">&copy; 2026 Shawn James Gudoy &bull; CS106 Web Development 1 (WD1-L6)</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS Bundle via jsDelivr CDN -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+  ></script>
+
+  <!-- External JavaScript File (Most Important Part of Activity) -->
+  <script src="js/script.js"></script>
+</body>
+</html>
